@@ -67,6 +67,24 @@ bootstrapper-toolkit/
 └── references/                        # Curated business book library (PDFs) + INDEX.md
 ```
 
-## Origin
+## Why This Exists
+
+I used to do all of this manually.
+
+For years, I evaluated business ideas the slow way — reading books, building spreadsheets, sketching TAM calculations on napkins, running competitive analysis by hand. Every new idea meant weeks of research before I had enough signal to decide if it was worth building.
+
+My frameworks got sharper with each business. MetricSpot taught me what distribution-first thinking actually means. RevenueHunt taught me that the idea matters less than the channel. A decade of saying no to bad ideas (and yes to two good ones) taught me which questions actually predict success.
+
+But the process was still slow, manual, and locked in my head.
+
+Then AI got good enough to change the equation. Not "summarize this article" good — good enough to run 10 research agents in parallel, pull real market data, score an idea against a quantitative framework, and synthesize a verdict that's better than what most consultants produce. In minutes, not weeks.
+
+So I took every framework I'd built over a decade — the scoring rubrics, the competitive dimensions, the unit economics sanity checks, the founder-fit diagnostics — and turned them into Claude Code skills. The reference library is 30+ business books I actually read and applied. The scoring weights reflect what I learned building two profitable businesses from zero.
+
+This toolkit is my decision-making process, automated. It's opinionated because I am.
+
+## Credits
 
 Created by [Alex Diaz](https://www.linkedin.com/in/revenuehunt/), co-founder of [RevenueHunt](https://www.revenuehunt.com/) — a 7-figure bootstrapped SaaS built without venture capital. The Oracle scoring skill was inspired by a framework from [Andrew Shackleford](https://www.linkedin.com/in/andrew-s-a175623/), a fellow [Dynamite Circle](https://dynamitecircle.com/) member.
+
+Read the human-friendly version on [Founders Hub](https://founders.do).
