@@ -73,7 +73,7 @@ I used to do all of this manually.
 
 For years, I evaluated business ideas the slow way — reading books, building spreadsheets, Googling market data across 20 tabs, running competitive analysis by hand. Every new idea meant days of research before I had enough signal to decide if it was worth building.
 
-My frameworks got sharper with each business. MetricSpot taught me what distribution-first thinking actually means. RevenueHunt taught me that the idea matters less than the channel. A decade of building things nobody wanted — a digital marketing agency, failed products, ideas that burned months and went nowhere — taught me which questions actually matter. What finally worked: SaaS with freemium distribution. Two out of many.
+My frameworks got sharper with each business. MetricSpot taught me what distribution-first thinking actually means. RevenueHunt taught me that the idea matters less than the channel. A decade of trying everything — a digital marketing agency, failed products, ideas that burned months and went nowhere — taught me which questions actually matter. Some things worked. But SaaS with freemium distribution is what scaled.
 
 But the process was still slow, manual, and locked in my head.
 
