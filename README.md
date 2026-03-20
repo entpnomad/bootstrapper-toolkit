@@ -77,7 +77,7 @@ My frameworks got sharper with each business. MetricSpot taught me what distribu
 
 But the process was still slow, manual, and locked in my head.
 
-Then AI got good enough to change the equation. Not "summarize this article" good — good enough to run 10 research agents in parallel, pull real market data, score an idea against a quantitative framework, and synthesize a verdict that's better than what most consultants produce. In minutes, not weeks.
+Then AI got good enough to change the equation. Not "summarize this article" good — good enough to run 10 research agents in parallel, pull real market data, score an idea against a quantitative framework, and synthesize a verdict that's better than what most consultants produce. In minutes, not days.
 
 So I took every framework I'd built over a decade — the scoring rubrics, the competitive dimensions, the unit economics sanity checks, the founder-fit diagnostics — and turned them into Claude Code skills. The reference library is 30+ business books I actually read and applied. The scoring weights reflect what I learned building two profitable businesses from zero.
 
