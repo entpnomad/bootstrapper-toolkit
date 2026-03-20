@@ -71,7 +71,7 @@ bootstrapper-toolkit/
 
 I used to do all of this manually.
 
-For years, I evaluated business ideas the slow way — reading books, building spreadsheets, sketching TAM calculations on napkins, running competitive analysis by hand. Every new idea meant weeks of research before I had enough signal to decide if it was worth building.
+For years, I evaluated business ideas the slow way — reading books, building spreadsheets, Googling market data across 20 tabs, running competitive analysis by hand. Every new idea meant weeks of research before I had enough signal to decide if it was worth building.
 
 My frameworks got sharper with each business. MetricSpot taught me what distribution-first thinking actually means. RevenueHunt taught me that the idea matters less than the channel. A decade of saying no to bad ideas (and yes to two good ones) taught me which questions actually predict success.
 
