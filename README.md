@@ -73,7 +73,7 @@ I used to do all of this manually.
 
 For years, I evaluated business ideas the slow way — reading books, building spreadsheets, Googling market data across 20 tabs, running competitive analysis by hand. Every new idea meant weeks of research before I had enough signal to decide if it was worth building.
 
-My frameworks got sharper with each business. MetricSpot taught me what distribution-first thinking actually means. RevenueHunt taught me that the idea matters less than the channel. A decade of saying no to bad ideas (and yes to two good ones) taught me which questions actually predict success.
+My frameworks got sharper with each business. MetricSpot taught me what distribution-first thinking actually means. RevenueHunt taught me that the idea matters less than the channel. A decade of building things nobody wanted, burning months on ideas that went nowhere, and getting two right out of dozens taught me which questions actually matter.
 
 But the process was still slow, manual, and locked in my head.
 
