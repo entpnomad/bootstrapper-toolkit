@@ -70,9 +70,12 @@ Content and distribution strategy generator. Produces content pillars, 15 specif
 ### `/risk-assessment`
 Risk matrix and pre-mortem analysis. Seven-dimension risk assessment (market, competitive, execution, financial, platform/tech, regulatory, founder/team). Pre-mortem exercise with three failure stories. Blind spot detection (3-5 risks the founder isn't thinking about). Ranked risk matrix (10-15 risks with severity x likelihood). Five validation gates. Core principle: founders are optimists — this skill injects structured pessimism before real money is on the line.
 
+### `/sanity-check`
+Lightweight decision filter. Applies 6 bootstrapper principles (clarity, distribution, manual-first, lock-in, opportunity cost, compounding) to ANY founder decision. One-page output: verdict, minimalist version, primary risk, this week's action. No research phase — fast and opinionated. Can also review output of other skills.
+
 ## Skill Architecture — Modular Analysis Suite
 
-The toolkit is a modular analysis and execution suite with four skill archetypes. Each business dimension gets its own standalone skill, independently invocable and composable. Generator and meta skills produce actionable artifacts from analysis outputs.
+The toolkit is a modular analysis and execution suite with five skill archetypes. Each business dimension gets its own standalone skill, independently invocable and composable. Generator and meta skills produce actionable artifacts from analysis outputs.
 
 ### Orchestrator Skills
 - `/analyze-idea` — Runs multiple dimension skills, cross-references results, synthesizes verdict
@@ -109,6 +112,11 @@ The toolkit is a modular analysis and execution suite with four skill archetypes
 |-------|--------|-------------|
 | `/idea-comparison` | **Live** | Side-by-side scoring of 2-4 ideas on 8 weighted dimensions, ranked recommendation, trade-off analysis, sequencing advice |
 | `/launch-plan` | **Live** | 30/60/90-day execution roadmap with weekly actions, decision gates, kill criteria, tools/budget, phase exit criteria. Synthesizes all prior skill outputs |
+
+### Filter Skills (lightweight decision filters)
+| Skill | Status | What it does |
+|-------|--------|-------------|
+| `/sanity-check` | **Live** | Applies 6 bootstrapper principles to any founder decision. One-page output: verdict, minimalist version, primary risk, this week's action. No research — fast and opinionated. Can review output of other skills |
 
 ## Reference Library
 

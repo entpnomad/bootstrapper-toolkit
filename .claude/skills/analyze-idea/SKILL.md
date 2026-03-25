@@ -33,7 +33,35 @@ From the user's input, extract:
 - Any stated constraints (geography, budget, timeline, skills)
 - **Idea name slug** — derive a short, descriptive name for the idea (e.g., "ecommerce quiz builder"). Slugify it: lowercase, hyphens for spaces, strip special characters. Build the report folder path: `reports/YYYY-MM-DD_idea-name-slug/` (use today's date). Store this path for Phase 5.
 
-If the idea description is too vague to even begin researching (e.g., just "I want to start a business"), ask ONE clarifying question. Otherwise, proceed directly to research.
+If the idea description is too vague to even begin researching (e.g., just "I want to start a business"), ask ONE clarifying question. Otherwise, proceed to the readiness check.
+
+### Phase 1.5: Readiness Check
+
+Before launching 10 dimension skills, verify the idea has enough substance for a meaningful analysis. Check three gates:
+
+1. **Specificity gate** — Can you extract all three: a specific *customer*, a specific *problem*, and a specific *solution approach*? If only 1 of 3 is present, the idea is too raw for full analysis.
+2. **Founder context gate** — Is there enough founder information (time, budget, domain, distribution assets) for `/founder-fit` to produce a meaningful result? If not, bundle the missing questions into ONE ask.
+3. **Research viability gate** — Is the idea specific enough that web searches will return meaningful competitor and market data? "AI tool for small businesses" produces noise. "AI-powered menu optimization for independent restaurants" produces signal.
+
+**If the specificity gate fails:**
+
+Do NOT proceed to Phase 2. Instead, output a short redirect:
+
+```
+## Not Ready for Full Analysis
+
+**What's missing:** [Which of customer/problem/solution is absent or too vague]
+
+**Run this first:** `/venture-sensei` — describe your idea and let Sensei sharpen the customer, problem, and solution before committing to a 10-dimension deep dive.
+
+**Come back with:** [Specific elements needed — e.g., "A named buyer persona, the specific pain they have today, and what your product does about it"]
+```
+
+This saves the founder from a 12-file report full of "UNKNOWN" and "LOW CONFIDENCE" ratings. A helpful redirect beats expensive noise.
+
+**If only the founder context gate fails:** Ask ONE bundled question for the missing context, then proceed.
+
+**If all gates pass:** Proceed to Phase 2.
 
 ### Phase 2: Run Dimension Skills in Parallel (research phase)
 
@@ -107,12 +135,18 @@ Apply the Sensei's 10-dimension evaluation framework as your strategic lens. Int
 
 Each dimension section below is a **digest** — key strategic findings from the dimension skill report, not the full report dump.
 
+**Per-dimension enhancements (apply to every dimension section below):**
+- **Bold thesis lead-in (blockquote):** If the dimension produced a finding that demands attention, open the section with a single bold blockquote sentence in Venture Sensei voice — the one thing the founder should remember if they read nothing else from that dimension. This is NOT a summary — it's an interpretive punch. Skip the blockquote if the dimension is unremarkable (everything average/fine). Don't force 10 bold sentences in a row.
+- **"Do NOT" anti-pattern:** End each dimension section with one `**Do NOT:**` line — the specific trap this founder is most likely to fall into, derived from this dimension's evidence. Must be idea-specific and cite the evidence. Never generic ("don't spend too much"). If no clear anti-pattern exists for a dimension, omit it.
+
 ```
 # ANALYSIS: [Idea Name]
 
 ---
 
 ## COMPETITIVE INTELLIGENCE
+
+> **[One bold Sensei-voice sentence — the single most important competitive insight. Example: "You're entering a dogfight with three funded players, but they're all selling to enterprise while ignoring the SMB segment screaming for help on Reddit." Skip this blockquote if findings are unremarkable.]**
 
 - **Competitive landscape validity**: [Gates passed X/5 — strong / viable with gaps / red flag]
 - **Red ocean validation**: [Is the market validated? How many competitors with paying customers?]
@@ -121,8 +155,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Bootstrapper advantage matrix highlights**: [Top exploitable weaknesses in funded competitors]
 - **Strategic wedge & customers to steal first**: [Primary competitive wedge, most vulnerable customer base]
 - **Idea-specific gap assessment verdict**: [GAP EXISTS / CROWDED BUT WINNABLE / NO CLEAR GAP — rationale]
+- **Do NOT:** [Specific competitive anti-pattern from evidence — e.g., "Compete on features — three funded competitors can out-ship you. Compete on speed-to-value and pricing."]
 
 ## MARKET SIZE INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if market findings demand attention. Skip if unremarkable.]**
 
 - **Market validity**: [Gates passed X/5 — viable / marginal / red flag]
 - **TAM/SAM/SOM/TRM**: [Bottom-up numbers with confidence level]
@@ -131,8 +168,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Demand signals**: [VALIDATED / PARTIALLY VALIDATED / UNVALIDATED — key evidence]
 - **Revenue ceiling**: [HIGH / MODERATE / LOW — realistic ARR range for a bootstrapper]
 - **Market risks**: [Top 1-2 market-level risks and what kills this market for a bootstrapper]
+- **Do NOT:** [Market-specific anti-pattern — e.g., "Chase the enterprise TAM — your beachhead is freelancers and the numbers work there."]
 
 ## MOAT & DEFENSIBILITY INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if defensibility findings demand attention. Skip if unremarkable.]**
 
 - **Defensibility verdict**: [STRONG / MODERATE / WEAK / NO MOAT]
 - **Validation gates passed**: [X/5 — list any failing gates]
@@ -142,8 +182,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Moat-building priority**: [Top moat opportunity to invest in and timeline]
 - **Counter-positioning**: [Is there a structural advantage against incumbents? What can't they copy?]
 - **The honest answer**: [One sentence — what actually stops someone from copying this?]
+- **Do NOT:** [Defensibility anti-pattern — e.g., "Claim 'AI' as your moat — it's a tool, not a barrier. Your moat is the workflow data users build inside the product."]
 
 ## GTM STRATEGY INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if distribution findings demand attention. Skip if unremarkable.]**
 
 - **Distribution verdict**: [CLEAR PATH / PLAUSIBLE / UNCLEAR / BLOCKED]
 - **Validation gates passed**: [X/6 — list any failing gates]
@@ -154,8 +197,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Distribution economics**: [LTV:CAC ratio, payback period — healthy / warning / red flag]
 - **Message-market fit**: [LIKELY / NEEDS TESTING / UNLIKELY — key assessment]
 - **First 100 plan**: [Core tactic and timeline for first 100 paying customers]
+- **Do NOT:** [Distribution anti-pattern — e.g., "Spend on paid ads before you've sold to 10 people manually — you'll burn cash optimizing a message that hasn't been validated."]
 
 ## PROBLEM ANALYSIS INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if problem findings demand attention. Skip if unremarkable.]**
 
 - **Problem verdict**: [PROBLEM WORTH SOLVING / NEEDS MORE EVIDENCE / PROBLEM IS WEAK / NO PROBLEM FOUND]
 - **Validation gates passed**: [X/6 — list any failing gates]
@@ -166,8 +212,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Hair-on-fire test**: [ON FIRE / WARM / LUKEWARM / COLD]
 - **Founder-vs-reality gap**: [The single biggest divergence between what the founder believes and what evidence shows]
 - **Customer language**: [Key phrases real people use to describe this pain — feeds GTM messaging]
+- **Do NOT:** [Problem anti-pattern — e.g., "Build for the pain YOU feel — the evidence says your target buyer describes this problem completely differently."]
 
 ## FINANCIAL PROJECTIONS INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if financial findings demand attention. Skip if unremarkable.]**
 
 - **Financial verdict**: [FINANCIALLY GROUNDED / VIABLE WITH GAPS / RED FLAG / NOT VIABLE]
 - **Validation gates passed**: [X/6 — list any failing gates]
@@ -178,8 +227,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Pricing power**: [HIGH / MODERATE / LOW / COMMODITY — ability to raise prices]
 - **Stress resilience**: [RESILIENT / ADAPTABLE / FRAGILE / BRITTLE — worst-case survival]
 - **Founder sustainability**: [FUNDED / MANAGEABLE / TIGHT / UNSUSTAINABLE — personal runway]
+- **Do NOT:** [Financial anti-pattern — e.g., "Price at $9/mo to 'reduce friction' — your margins need $29+ to survive without venture scale."]
 
 ## BUSINESS MODEL INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if business model findings demand attention. Skip if unremarkable.]**
 
 - **Business model verdict**: [REVENUE ENGINE SOUND / VIABLE BUT NEEDS TUNING / STRUCTURAL WEAKNESS / BROKEN MODEL]
 - **Validation gates passed**: [X/5 — list any failing gates]
@@ -190,8 +242,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Cash flow dynamics**: [CASH-POSITIVE / NEUTRAL / CASH-HUNGRY / CASH-BURNING — timing and self-funding capacity]
 - **Scalability**: [HIGH-LEVERAGE / MODERATE / LINEAR / LABOR-BOUND — marginal cost and founder ceiling]
 - **Model risks**: [Top risk to the revenue engine and single point of failure]
+- **Do NOT:** [Business model anti-pattern — e.g., "Launch with a freemium tier — your market is too small for freemium math to work. Charge from day one."]
 
 ## SOLUTION ANALYSIS INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if solution findings demand attention. Skip if unremarkable.]**
 
 - **Solution verdict**: [BUILD IT / TEST IT / RETHINK IT / STOP]
 - **Validation gates passed**: [X/6 — list any failing gates]
@@ -203,8 +258,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **AI-interface trap**: [PASSES / FAILS — does the product deliver tangible artifacts beyond the conversation itself?]
 - **Time-to-value**: [INSTANT / FAST / SLOW / DEFERRED — how fast users get the payoff]
 - **Retention & habit potential**: [HABITUAL / REGULAR / EPISODIC / ONE-TIME]
+- **Do NOT:** [Solution anti-pattern — e.g., "Build the full platform before testing — ship the manual version to 5 people this week and see if the core value prop holds."]
 
 ## TIMING INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if timing findings demand attention. Skip if unremarkable.]**
 
 - **Timing verdict**: [TIMING IS NOW / WINDOW OPEN / TOO EARLY / TOO LATE / TIMING UNCLEAR]
 - **Validation gates passed**: [X/5 — list any failing gates]
@@ -215,8 +273,11 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Incumbent vulnerability**: [WINDOW OPEN / CRACKING / STABLE / CONSOLIDATING — temporary weakness]
 - **Bootstrapper timing fit**: [FAVORS BOOTSTRAPPER / NEUTRAL / FAVORS FUNDED / UNFAVORABLE — does pace work?]
 - **The honest answer**: [One sentence — why now and not two years ago or two years from now?]
+- **Do NOT:** [Timing anti-pattern — e.g., "Wait for the 'perfect moment' — the window is open now and narrowing. Ship ugly, learn fast."]
 
 ## FOUNDER FIT INTELLIGENCE
+
+> **[Bold Sensei-voice sentence if founder fit findings demand attention. Skip if unremarkable.]**
 
 - **Fit verdict**: [STRONG FIT / GOOD FIT / PARTIAL FIT / POOR FIT]
 - **Validation gates passed**: [X/7 — list any failing gates]
@@ -226,6 +287,7 @@ Each dimension section below is a **digest** — key strategic findings from the
 - **Critical gaps**: [Top 1-2 founder-business mismatches]
 - **Asymmetric advantages**: [What this founder has that competing founders lack]
 - **The honest answer**: [One sentence — should this founder build this business?]
+- **Do NOT:** [Founder fit anti-pattern — e.g., "Outsource distribution to a marketing hire — you have no audience and no relationships in this market. That's your job, not theirs."]
 
 ---
 
@@ -321,6 +383,29 @@ For each risk, note which source(s) flagged it.]
 
 ---
 
+## RED FLAGS — Do Not Build If...
+
+[3-5 binary, falsifiable statements extracted from dimension skill evidence. Each is a specific condition derived from THIS analysis — not generic advice. Every flag must cite which dimension skill produced the evidence.]
+
+- "[Specific condition in the founder's own situation]" ([Dimension Skill]: [specific finding])
+- "[Specific condition]" ([Dimension Skill]: [specific finding])
+- "[Specific condition]" ([Dimension Skill]: [specific finding])
+
+**Rules:**
+- Every flag must be derived from actual dimension skill evidence, not boilerplate
+- Flags like "Don't build if the market is too small" are useless — be specific to this idea
+- If a red flag matches the founder's actual situation, bold it and add ⚠️
+
+## GREEN FLAGS — Worth Pursuing If...
+
+[3-5 binary statements showing where evidence is strong. Same format — cite the dimension skill.]
+
+- "[Specific positive signal from the evidence]" ([Dimension Skill]: [specific finding])
+- "[Specific positive signal]" ([Dimension Skill]: [specific finding])
+- "[Specific positive signal]" ([Dimension Skill]: [specific finding])
+
+---
+
 ## STRATEGIC VERDICT
 
 [Venture Sensei voice. Integrate ALL inputs into a single strategic narrative:
@@ -341,32 +426,67 @@ For each risk, note which source(s) flagged it.]
 **IF CONDITIONAL — what must be true:**
 [Numbered list of conditions that would flip this to GO]
 
-**NEXT 7 DAYS — top 3 actions:**
-1. [Specific, concrete action with measurable outcome]
-2. [Specific, concrete action with measurable outcome]
-3. [Specific, concrete action with measurable outcome]
+**NEXT 7 DAYS — Validation Ladder:**
+
+Derive each step from GTM, Problem Analysis, and Solution Analysis findings. Make every step idea-specific — not generic advice.
+
+1. **MANUAL (Today):** [The thing you can do with zero tools, zero code, zero spend — a conversation, a DM, a manual service delivery. The manual version of THIS specific product.]
+   - **Target:** [Specific person, community, subreddit, LinkedIn group — named from the analysis, not abstract]
+   - **Success signal:** [What a positive response looks like — be specific]
+
+2. **PROCESSIZED (Day 3-5):** [Take what you learned from #1 and create a lightweight, repeatable version — a landing page, a typeform, a manual-but-scalable process]
+   - **Target:** [Expanded circle — from personal network to community to strangers]
+   - **Success signal:** [Measurable outcome — signups, replies, payment intent]
+
+3. **PRODUCTIZED (Day 6-7):** [Only if #1 and #2 showed signal — the smallest buildable thing that tests the core value prop]
+   - **Target:** [First 5-10 real users]
+   - **Success signal:** [Someone pays, or you know exactly why they won't]
 
 ---
 
-## RECOMMENDED NEXT STEPS
+## WHERE THIS IDEA STANDS
 
-Rank 3-5 of the following generator and meta skills by relevance to THIS analysis's specific findings. Place the most impactful skill first. Omit any skill that is not relevant (e.g., `/idea-comparison` when no alternative ideas exist).
+Place this idea on the founder journey based on what the analysis revealed — not where the founder thinks they are:
 
-Available skills to recommend:
-- `/launch-plan` — 30/60/90-day execution roadmap with decision gates and kill criteria
-- `/positioning` — Ready-to-paste homepage copy, value propositions, and messaging
-- `/user-personas` — Detailed persona cards from buyer insights
-- `/content-strategy` — 90-day content plan with SEO keywords and distribution tactics
-- `/risk-assessment` — Structured pre-mortem and blind spot analysis
-- `/idea-comparison` — Side-by-side comparison against alternative ideas
+```
+Idea → [Validate Problem] → [Validate Solution] → [First Revenue] → [Growth]
+                                    ↑
+                               YOU ARE HERE
+```
 
-| Priority | Skill | Why Run This Next (specific to this analysis) |
-|----------|-------|-----------------------------------------------|
-| 1 | [Most impactful skill given findings] | [Specific reason tied to this analysis's verdict, weak spots, or opportunities] |
-| 2 | [Second most impactful] | [Specific reason] |
-| 3 | [Third] | [Specific reason] |
+Determine position from dimension skill gate results:
+- Problem Analysis gates mostly failing → **Validate Problem** stage
+- Problem validated but Solution Analysis gates weak → **Validate Solution** stage
+- Both validated but no revenue evidence → **First Revenue** stage
+- Revenue exists, scaling questions → **Growth** stage
 
-**How to use these:** Each skill consumes the analysis already in this session — no need to re-describe the idea. Just run the command.
+**Stage:** [Named stage — one sentence explaining why based on gate results]
+**What must be true before moving forward:** [1-2 specific conditions from the analysis that gate progression]
+
+## YOUR PATH FORWARD
+
+Sequence 3-4 skills as a journey with prerequisites. Route based on where the analysis is weakest. Each step unlocks the next. Include one "Do NOT run yet" recommendation.
+
+Available skills to route:
+- `/user-personas` — Sharpen buyer persona (run when persona is VAGUE or UNKNOWN)
+- `/positioning` — Generate messaging and copy (run when persona is clear)
+- `/content-strategy` — Distribution plan (run when messaging exists and problem is validated)
+- `/launch-plan` — 90-day execution roadmap (run when verdict is GO or CONDITIONAL with clear conditions)
+- `/risk-assessment` — Pre-mortem deep dive (run when verdict is CONDITIONAL or risks are underexplored)
+- `/idea-comparison` — Compare against alternatives (run when verdict is NO-GO or founder has other ideas)
+- `/sanity-check` — Quick decision filter for any remaining questions about this analysis
+
+**Step 1 (Now):** `/[skill]` — [Specific reason tied to the weakest dimension in this analysis]
+→ Unlocks: Step 2
+
+**Step 2 (After Step 1):** `/[skill]` — [Why this depends on Step 1 completing]
+→ Unlocks: Step 3
+
+**Step 3 (After Step 2):** `/[skill]` — [Final step in the sequence]
+
+**Do NOT run yet:** `/[skill]` — [Specific reason this skill would be premature given current evidence gaps]
+
+**Each skill consumes the analysis already in this session — no need to re-describe the idea. Just run the command.**
 ```
 
 ### Phase 5: Save Reports to Disk

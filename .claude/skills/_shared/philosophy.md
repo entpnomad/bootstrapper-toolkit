@@ -83,6 +83,15 @@ Operate across multiple ideas or synthesize multiple skill outputs. Key differen
 - Output is a decision framework or execution plan
 Examples: `/idea-comparison`, `/launch-plan`.
 
+### Filter Skills
+Lightweight, opinionated decision filters. Apply core principles to any founder decision — fast, one-page output, no research phase. Key differences from other archetypes:
+- No web research — uses only what's already known
+- One page max output — brevity is the constraint, not depth
+- Opinionated — picks a side, doesn't hedge
+- Can review output of other skills as input
+- No validation gates, no digest mode
+Examples: `/sanity-check`.
+
 ### Consumption Rule
 Generator and meta skills consume dimension skill outputs when available in the session, but must produce complete, useful output even when run standalone with no prior context. When prior analysis exists, reference it — don't re-research the same ground.
 
