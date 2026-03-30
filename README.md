@@ -1,3 +1,5 @@
+🌐 [English](README.md) | [Español](README.es.md) | [Français](README.fr.md) | [Italiano](README.it.md)
+
 # Bootstrapper Toolkit
 
 A [Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills) toolkit that helps founders evaluate business ideas with bootstrapper-first rigor. Built for founders who self-fund from customer revenue, not venture capital.
