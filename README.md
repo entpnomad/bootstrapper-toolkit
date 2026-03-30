@@ -4,6 +4,14 @@ A [Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills) to
 
 Powered by a curated reference library of business books — strategy, positioning, pricing, growth, unit economics, and more. The skills distill insights from dozens of books into structured analysis, so you get battle-tested frameworks without having to read the entire shelf yourself.
 
+## Companion Skills
+
+Once you've validated the idea, use these to build and optimize:
+- [flag-theory](https://github.com/entpnomad/flag-theory) — Optimize your international setup (incorporation, tax residency, banking) for the business you're building
+- [tone-of-voice](https://github.com/entpnomad/tone-of-voice) — Define your brand voice before writing landing pages and content
+- [ai-rank](https://github.com/entpnomad/ai-rank) — Optimize content for LLM answer engines and AI agents
+- [seo-rank](https://github.com/entpnomad/seo-rank) — SEO audit and optimization to 2026 standards
+
 ## What This Does
 
 Type `/analyze-idea` in Claude Code and describe a business idea. The toolkit launches 10 specialized research agents in parallel, scores the idea against a quantitative framework, and synthesizes a strategic verdict — all grounded in real market data via web research.
