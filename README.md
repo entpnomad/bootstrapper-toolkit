@@ -4,25 +4,25 @@
 
 A [Claude Code skills](https://docs.anthropic.com/en/docs/claude-code/skills) toolkit that helps founders evaluate business ideas with bootstrapper-first rigor. Built for founders who self-fund from customer revenue, not venture capital.
 
-Powered by a curated reference library of business books — strategy, positioning, pricing, growth, unit economics, and more. The skills distill insights from dozens of books into structured analysis, so you get battle-tested frameworks without having to read the entire shelf yourself.
+Powered by a curated reference library of business books: strategy, positioning, pricing, growth, unit economics, and more. The skills distill insights from dozens of books into structured analysis, so you get battle-tested frameworks without having to read the entire shelf yourself.
 
 ## Companion Skills
 
 Once you've validated the idea, use these to build and optimize:
-- [flag-theory](https://github.com/entpnomad/flag-theory) — Optimize your international setup (incorporation, tax residency, banking) for the business you're building
-- [tone-of-voice](https://github.com/entpnomad/tone-of-voice) — Define your brand voice before writing landing pages and content
-- [ai-rank](https://github.com/entpnomad/ai-rank) — Optimize content for LLM answer engines and AI agents
-- [seo-rank](https://github.com/entpnomad/seo-rank) — SEO audit and optimization to 2026 standards
+- [flag-theory](https://github.com/entpnomad/flag-theory) - Optimize your international setup (incorporation, tax residency, banking) for the business you're building
+- [tone-of-voice](https://github.com/entpnomad/tone-of-voice) - Define your brand voice before writing landing pages and content
+- [ai-rank](https://github.com/entpnomad/ai-rank) - Optimize content for LLM answer engines and AI agents
+- [seo-rank](https://github.com/entpnomad/seo-rank) - SEO audit and optimization to 2026 standards
 
 ## What This Does
 
-Type `/analyze-idea` in Claude Code and describe a business idea. The toolkit launches 10 specialized research agents in parallel, scores the idea against a quantitative framework, and synthesizes a strategic verdict — all grounded in real market data via web research.
+Type `/analyze-idea` in Claude Code and describe a business idea. The toolkit launches 10 specialized research agents in parallel, scores the idea against a quantitative framework, and synthesizes a strategic verdict, all grounded in real market data via web research.
 
 Each dimension can also run standalone:
 
 | Skill | What it does |
 |-------|-------------|
-| `/analyze-idea` | Full orchestrated analysis — runs all dimensions, scores, synthesizes |
+| `/analyze-idea` | Full orchestrated analysis: runs all dimensions, scores, synthesizes |
 | `/venture-sensei` | Brutal strategic mentorship and idea critique |
 | `/bootstrap-oracle` | Structured scoring with unit economics and sanity gates |
 | `/competitor-analysis` | 16-dimension competitive intelligence |
@@ -44,7 +44,7 @@ Each dimension can also run standalone:
 - Build things people pay for, then compound over decades
 - The best moment to sell a good business is never
 
-Code is cheap — AI coding tools mean a solo founder can ship what used to take a funded team. The bottleneck has shifted from "can we build it?" to **clarity** (do you know what's worth building?) and **distribution** (can you reach buyers?). Every skill in this toolkit weights these accordingly.
+Code is cheap. AI coding tools mean a solo founder can ship what used to take a funded team. The bottleneck has shifted from "can we build it?" to **clarity** (do you know what's worth building?) and **distribution** (can you reach buyers?). Every skill in this toolkit weights these accordingly.
 
 ## Setup
 
@@ -61,9 +61,9 @@ bootstrapper-toolkit/
 ├── CLAUDE.md                          # Project conventions and skill architecture
 ├── .claude/skills/                    # All skills (project-local)
 │   ├── _shared/                       # Shared philosophy and principles
-│   ├── analyze-idea/                  # Orchestrator — runs all dimensions
-│   ├── venture-sensei/                # Mentor — strategic critique
-│   ├── bootstrap-oracle/              # Mentor — structured scoring
+│   ├── analyze-idea/                  # Orchestrator - runs all dimensions
+│   ├── venture-sensei/                # Mentor - strategic critique
+│   ├── bootstrap-oracle/              # Mentor - structured scoring
 │   ├── competitor-analysis/           # Dimension skill
 │   ├── market-size/                   # Dimension skill
 │   ├── problem-analysis/              # Dimension skill
@@ -81,20 +81,20 @@ bootstrapper-toolkit/
 
 I used to do all of this manually.
 
-For years, I evaluated business ideas the slow way — reading books, building spreadsheets, Googling market data across 20 tabs, running competitive analysis by hand. Every new idea meant days of research before I had enough signal to decide if it was worth building.
+For years, I evaluated business ideas the slow way: reading books, building spreadsheets, Googling market data across 20 tabs, running competitive analysis by hand. Every new idea meant days of research before I had enough signal to decide if it was worth building.
 
-My frameworks got sharper with each business. MetricSpot taught me what distribution-first thinking actually means. RevenueHunt taught me that the idea matters less than the channel. A decade of trying everything — a digital marketing agency, failed products, ideas that burned months and went nowhere — taught me which questions actually matter. Some things worked. But SaaS with freemium distribution is what scaled.
+My frameworks got sharper with each business. MetricSpot taught me what distribution-first thinking actually means. RevenueHunt taught me that the idea matters less than the channel. A decade of trying everything (a digital marketing agency, failed products, ideas that burned months and went nowhere) taught me which questions actually matter. Some things worked. But SaaS with freemium distribution is what scaled.
 
 But the process was still slow, manual, and locked in my head.
 
-Then AI got good enough to change the equation. Not "summarize this article" good — good enough to run 10 research agents in parallel, pull real market data, score an idea against a quantitative framework, and synthesize a verdict that's better than what most consultants produce. About 30 minutes, not days — and it goes deep.
+Then AI got good enough to change the equation. Not "summarize this article" good. Good enough to run 10 research agents in parallel, pull real market data, score an idea against a quantitative framework, and synthesize a verdict that's better than what most consultants produce. About 30 minutes, not days, and it goes deep.
 
-So I took every framework I'd built over a decade — the scoring rubrics, the competitive dimensions, the unit economics sanity checks, the founder-fit diagnostics — and turned them into Claude Code skills. The reference library is 30+ business books I actually read and applied. The scoring weights reflect what I learned building two profitable businesses from zero.
+So I took every framework I'd built over a decade (the scoring rubrics, the competitive dimensions, the unit economics sanity checks, the founder-fit diagnostics) and turned them into Claude Code skills. The reference library is 30+ business books I actually read and applied. The scoring weights reflect what I learned building two profitable businesses from zero.
 
 This toolkit is my decision-making process, automated. It's opinionated because I am.
 
 ## Credits
 
-Created by [Alex Diaz](https://www.linkedin.com/in/revenuehunt/), co-founder of [RevenueHunt](https://www.revenuehunt.com/) — a 7-figure bootstrapped SaaS built without venture capital. The Oracle scoring skill was inspired by a framework from [Andrew Shackleford](https://www.linkedin.com/in/andrew-s-a175623/), a fellow [Dynamite Circle](https://dynamitecircle.com/) member.
+Created by [Alex Diaz](https://www.linkedin.com/in/revenuehunt/), co-founder of [RevenueHunt](https://www.revenuehunt.com/), a 7-figure bootstrapped SaaS built without venture capital. The Oracle scoring skill was inspired by a framework from [Andrew Shackleford](https://www.linkedin.com/in/andrew-s-a175623/), a fellow [Dynamite Circle](https://dynamitecircle.com/) member.
 
 Read the human-friendly version on [Founders Hub](https://founders.do).
